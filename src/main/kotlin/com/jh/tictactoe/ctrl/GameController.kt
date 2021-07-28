@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("/game")
 class GameController {
 
-    var gameState: GameState = GameState(Array(3) { IntArray(3) { 0 } }, false, null)
+    var gameState: GameState = GameState()
 
     @GetMapping("/state")
     fun getGameState(): ResponseEntity<GameState> {
