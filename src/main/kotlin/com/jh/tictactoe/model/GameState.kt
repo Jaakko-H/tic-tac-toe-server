@@ -3,7 +3,7 @@ package com.jh.tictactoe.model
 import java.util.*
 
 class GameState(
-    var board: Array<IntArray> = Array(3) { IntArray(3) { 0 } },
+    var board: Array<Array<Mark?>> = Array(3) { Array(3) { null } },
 ) {
     val id: UUID = UUID.randomUUID()
 
