@@ -7,6 +7,7 @@ class GameState(
 ) {
     val id: UUID = UUID.randomUUID()
 
+    var currentTurn: Mark = Mark.X
     var isFinished: Boolean = false
     var winner: String? = null
 }
